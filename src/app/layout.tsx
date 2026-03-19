@@ -16,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#0a0a0a] text-[#ededed] min-h-screen">
         {children}
+              <script src="https://78slopads.vercel.app/api/promo.js" defer></script>
       </body>
     </html>
   );
