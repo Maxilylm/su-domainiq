@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DomainIQ
 
-## Getting Started
+> Enter a domain name and get a valuation with a letter grade and a factor-by-factor breakdown.
 
-First, run the development server:
+**[Live demo](https://su-domainiq.vercel.app)**
+
+Domain appraisal tools tend to be paywalled or opaque about how they reached a number. DomainIQ sends a domain to Groq's Llama 3.3 70B prompted as an appraiser and returns a low/mid/high USD range, a grade from A+ to F, and scores across six named factors with a written justification for each. The report also lists comparable sales — worth treating as model-generated illustrations rather than verified transaction records.
+
+## Features
+
+- Low, mid, and high USD value estimate for any domain
+- Letter grade from A+ down to F
+- Six scored factors out of 10 — Length, Brandability, Keyword Value, Extension, Memorability, Market Demand — each with an explanation
+- AI-suggested comparable sales with price and year
+- Actionable suggestions for raising the domain's value
+- Copy the full valuation report to the clipboard
+
+## Stack
+
+- Next.js 16 (App Router), React 19, TypeScript
+- Tailwind CSS v4
+- Groq API — `llama-3.3-70b-versatile` in JSON response mode
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Set `GROQ_API_KEY` in `.env.local`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Part of a series of 91 small web apps. [Browse them all](https://su-slopmachine.vercel.app).
