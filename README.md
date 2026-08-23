@@ -2,7 +2,7 @@
 
 > Enter a domain name and get a valuation with a letter grade and a factor-by-factor breakdown.
 
-**[Live demo](https://su-domainiq.vercel.app)**
+**[Live demo](https://domainiq-mlx.vercel.app)**
 
 Domain appraisal tools tend to be paywalled or opaque about how they reached a number. DomainIQ sends a domain to Groq's Llama 3.3 70B prompted as an appraiser and returns a low/mid/high USD range, a grade from A+ to F, and scores across six named factors with a written justification for each. The report also lists comparable sales — worth treating as model-generated illustrations rather than verified transaction records.
 
@@ -32,4 +32,4 @@ Set `GROQ_API_KEY` in `.env.local`.
 
 ---
 
-Part of a series of 91 small web apps. [Browse them all](https://su-slopmachine.vercel.app).
+Part of a series of 91 small web apps. [Browse them all](https://lorenzoylosada.vercel.app).
